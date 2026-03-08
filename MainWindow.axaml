@@ -1,9 +1,25 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="TP_MODUL3_103022400067.MainWindow"
-        Title="TP_MODUL3_103022400067">
-    Welcome to Avalonia!
+        Title="Kalkulator" Width="300" Height="400">
+    
+    <StackPanel Margin="20">
+        <TextBlock Name="LabelInput" Text="" FontSize="15" Foreground="Gray" HorizontalAlignment="Right"/>
+        <TextBlock Name="LabelOutput" Text="0" FontSize="30" HorizontalAlignment="Right" Margin="0,0,0,20"/>
+        
+        <UniformGrid Columns="3">
+            <Button Content="1" Click="OnButtonClick"/>
+            <Button Content="2" Click="OnButtonClick"/>
+            <Button Content="3" Click="OnButtonClick"/>
+            <Button Content="4" Click="OnButtonClick"/>
+            <Button Content="5" Click="OnButtonClick"/>
+            <Button Content="6" Click="OnButtonClick"/>
+            <Button Content="7" Click="OnButtonClick"/>
+            <Button Content="8" Click="OnButtonClick"/>
+            <Button Content="9" Click="OnButtonClick"/>
+            <Button Content="+" Click="OnButtonClick"/>
+            <Button Content="0" Click="OnButtonClick"/>
+            <Button Content="=" Click="OnButtonClick"/>
+        </UniformGrid>
+    </StackPanel>
 </Window>
